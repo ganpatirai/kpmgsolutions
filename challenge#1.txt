@@ -1,0 +1,3 @@
+For Challenge#1:
+
+I have an AWS account but the free tier eligibility is expired and the resources I would be using, can be paid. Hence, could not able to perform and set up the whole 3-tier environment. If possible please suggest me some other way that is acceptable to the panel so I can perform.
