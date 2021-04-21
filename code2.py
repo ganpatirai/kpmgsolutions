@@ -3,7 +3,7 @@ import sys
 from requests.packages.urllib3 import Retry
 import json
 
-def get_instance_region():
+def get_instance_metadata():
     url = "http://169.254.169.254/latest/dynamic/instance-identity/document"
     session = requests.Session()
     retries = Retry(total=3, backoff_factor=0.3)
@@ -29,5 +29,6 @@ def get_instance_region():
 
     metadata_res = [region, accountID, imageID, aZ, privateIP, version, pTime, arch, instanceID, InstanceType]
     json_result = json.dump(metadata_res)
-    return(json_res)
+    return json_result
 
+print(get_instance_metadata())
